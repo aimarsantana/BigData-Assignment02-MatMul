@@ -1,0 +1,20 @@
+key,value
+all.compiler,gcc 16.1.0
+all.cflags,-O2 -std=c11 -Wall -Wextra -lpsapi
+all.affinity,logical processor 2
+all.priority,high
+blocked.block,8
+blocked.block,16
+blocked.block,32
+blocked.block,64
+blocked.block,128
+blocked.block,256
+blocked.block,512
+all.compiler,gcc 16.1.0
+all.cflags,-O2 -std=c11 -Wall -Wextra -lpsapi
+all.affinity,logical processor 2
+all.priority,high
+ijk.block,0
+ikj.block,0
+unroll4.block,0
+blocked.block,32

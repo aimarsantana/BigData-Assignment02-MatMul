@@ -1,0 +1,8 @@
+experiment,NOT_ATTEMPTED,OK,TIMEOUT
+D1_size,1,42,1
+D2_block,0,21,0
+S1_sparsity,0,54,0
+S2_size_z99,5,30,1
+S3_size_z99.9,6,12,0
+S4_band_width,0,30,0
+S5_band_size,6,12,0

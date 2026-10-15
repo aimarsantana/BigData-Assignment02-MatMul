@@ -1,0 +1,15 @@
+﻿date_utc: 2026-10-15T10:29:09Z
+cpu_model: AMD Ryzen 7 7730U with Radeon Graphics
+physical_cores: 8
+logical_processors: 16
+cpu_max_clock_mhz (reported by Windows): 2000
+l2_cache_kb (Win32_Processor): 4096
+l3_cache_kb (Win32_Processor): 16384
+ram_total_gb: 13.84
+ram_modules: 8GB@3200MT/s, 8GB@3200MT/s
+os: Microsoft Windows 11 Home 10.0.26200 build 26200
+power_scheme: Equilibrado
+battery_status (2 = AC power): 2
+gcc: gcc.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.1.0
+python (uv): 3.14.5 numpy 2.5.4 pandas 3.0.6 matplotlib 3.11.2
+build_flags: gcc -O2 -std=c11 -Wall -Wextra -lpsapi (see build.ps1)

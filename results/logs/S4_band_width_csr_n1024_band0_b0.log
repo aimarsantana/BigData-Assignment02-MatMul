@@ -1,0 +1,18 @@
+C:\Users\aimar\OneDrive\Escritorio\Tercero de carrera\ASIGNATURAS\Big Data\assigments\assigment-2\Assignment02_AlejandroSantana_Materials\build\matmul2.exe csr C:/bench2/data\A_n1024_band_w0.csr C:/bench2/data\B_n1024_band_w0.csr 1 10 0
+INFO,all,compiler,gcc 16.1.0
+INFO,all,cflags,-O2 -std=c11 -Wall -Wextra -lpsapi
+INFO,all,affinity,logical processor 2
+INFO,all,priority,high
+SAMPLE,csr,1024,warmup,0,1,65500.0,0.1778227701042579,1024,1024,1024
+SAMPLE,csr,1024,measured,0,305,43845.9,0.1778227701042579,1024,1024,1024
+SAMPLE,csr,1024,measured,1,305,40801.0,0.1778227701042579,1024,1024,1024
+SAMPLE,csr,1024,measured,2,305,28350.5,0.1778227701042579,1024,1024,1024
+SAMPLE,csr,1024,measured,3,305,20472.5,0.1778227701042579,1024,1024,1024
+SAMPLE,csr,1024,measured,4,305,18636.4,0.1778227701042579,1024,1024,1024
+SAMPLE,csr,1024,measured,5,305,20525.6,0.1778227701042579,1024,1024,1024
+SAMPLE,csr,1024,measured,6,305,18531.8,0.1778227701042579,1024,1024,1024
+SAMPLE,csr,1024,measured,7,305,18432.5,0.1778227701042579,1024,1024,1024
+SAMPLE,csr,1024,measured,8,305,19383.6,0.1778227701042579,1024,1024,1024
+SAMPLE,csr,1024,measured,9,305,18321.6,0.1778227701042579,1024,1024,1024
+MEM,csr,1024,peak_working_set_kib,8628
+MEM,csr,1024,peak_commit_kib,2184

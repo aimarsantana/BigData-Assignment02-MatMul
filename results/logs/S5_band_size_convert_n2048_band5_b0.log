@@ -1,0 +1,18 @@
+C:\Users\aimar\OneDrive\Escritorio\Tercero de carrera\ASIGNATURAS\Big Data\assigments\assigment-2\Assignment02_AlejandroSantana_Materials\build\matmul2.exe convert C:/bench2/data\A_n2048_band_w5.bin C:/bench2/data\B_n2048_band_w5.bin 2048 1 10
+INFO,all,compiler,gcc 16.1.0
+INFO,all,cflags,-O2 -std=c11 -Wall -Wextra -lpsapi
+INFO,all,affinity,logical processor 2
+INFO,all,priority,high
+SAMPLE,convert,2048,warmup,0,1,11278000.0,101.41649224896366,22498,22498,-1
+SAMPLE,convert,2048,measured,0,1,11475600.0,101.41649224896366,22498,22498,-1
+SAMPLE,convert,2048,measured,1,1,10997600.0,101.41649224896366,22498,22498,-1
+SAMPLE,convert,2048,measured,2,1,11037400.0,101.41649224896366,22498,22498,-1
+SAMPLE,convert,2048,measured,3,1,10675500.0,101.41649224896366,22498,22498,-1
+SAMPLE,convert,2048,measured,4,1,10662300.0,101.41649224896366,22498,22498,-1
+SAMPLE,convert,2048,measured,5,1,12367700.0,101.41649224896366,22498,22498,-1
+SAMPLE,convert,2048,measured,6,1,10940800.0,101.41649224896366,22498,22498,-1
+SAMPLE,convert,2048,measured,7,1,11041000.0,101.41649224896366,22498,22498,-1
+SAMPLE,convert,2048,measured,8,1,10860500.0,101.41649224896366,22498,22498,-1
+SAMPLE,convert,2048,measured,9,1,10723900.0,101.41649224896366,22498,22498,-1
+MEM,convert,2048,peak_working_set_kib,74460
+MEM,convert,2048,peak_commit_kib,67884

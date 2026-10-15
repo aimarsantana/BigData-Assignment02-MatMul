@@ -1,0 +1,20 @@
+C:\Users\aimar\OneDrive\Escritorio\Tercero de carrera\ASIGNATURAS\Big Data\assigments\assigment-2\Assignment02_AlejandroSantana_Materials\build\matmul2.exe dense ikj C:/bench2/data\A_n256_uni_z99.bin C:/bench2/data\B_n256_uni_z99.bin 256 2 10 0 32
+INFO,all,compiler,gcc 16.1.0
+INFO,all,cflags,-O2 -std=c11 -Wall -Wextra -lpsapi
+INFO,all,affinity,logical processor 2
+INFO,all,priority,high
+INFO,ikj,block,0
+SAMPLE,ikj,256,warmup,0,1,7909300.0,19.05070927677707,-1,-1,-1
+SAMPLE,ikj,256,warmup,1,2,8847000.0,19.05070927677707,-1,-1,-1
+SAMPLE,ikj,256,measured,0,2,8862650.0,19.05070927677707,-1,-1,-1
+SAMPLE,ikj,256,measured,1,2,10202550.0,19.05070927677707,-1,-1,-1
+SAMPLE,ikj,256,measured,2,2,6260350.0,19.05070927677707,-1,-1,-1
+SAMPLE,ikj,256,measured,3,2,6799800.0,19.05070927677707,-1,-1,-1
+SAMPLE,ikj,256,measured,4,2,8568250.0,19.05070927677707,-1,-1,-1
+SAMPLE,ikj,256,measured,5,2,8057000.0,19.05070927677707,-1,-1,-1
+SAMPLE,ikj,256,measured,6,2,7676450.0,19.05070927677707,-1,-1,-1
+SAMPLE,ikj,256,measured,7,2,7770100.0,19.05070927677707,-1,-1,-1
+SAMPLE,ikj,256,measured,8,2,7294650.0,19.05070927677707,-1,-1,-1
+SAMPLE,ikj,256,measured,9,2,7299800.0,19.05070927677707,-1,-1,-1
+MEM,ikj,256,peak_working_set_kib,9884
+MEM,ikj,256,peak_commit_kib,3184

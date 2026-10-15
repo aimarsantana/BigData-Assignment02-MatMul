@@ -1,0 +1,20 @@
+C:\Users\aimar\OneDrive\Escritorio\Tercero de carrera\ASIGNATURAS\Big Data\assigments\assigment-2\Assignment02_AlejandroSantana_Materials\build\matmul2.exe dense unroll4 C:/bench2/data\A_n512.bin C:/bench2/data\B_n512.bin 512 2 10 0 32
+INFO,all,compiler,gcc 16.1.0
+INFO,all,cflags,-O2 -std=c11 -Wall -Wextra -lpsapi
+INFO,all,affinity,logical processor 2
+INFO,all,priority,high
+INFO,unroll4,block,0
+SAMPLE,unroll4,512,warmup,0,1,33413800.0,1878.8115925685456,-1,-1,-1
+SAMPLE,unroll4,512,warmup,1,1,32876100.0,1878.8115925685456,-1,-1,-1
+SAMPLE,unroll4,512,measured,0,1,32792700.0,1878.8115925685456,-1,-1,-1
+SAMPLE,unroll4,512,measured,1,1,33141200.0,1878.8115925685456,-1,-1,-1
+SAMPLE,unroll4,512,measured,2,1,33075500.0,1878.8115925685456,-1,-1,-1
+SAMPLE,unroll4,512,measured,3,1,33178700.0,1878.8115925685456,-1,-1,-1
+SAMPLE,unroll4,512,measured,4,1,33566600.0,1878.8115925685456,-1,-1,-1
+SAMPLE,unroll4,512,measured,5,1,34881600.0,1878.8115925685456,-1,-1,-1
+SAMPLE,unroll4,512,measured,6,1,34620500.0,1878.8115925685456,-1,-1,-1
+SAMPLE,unroll4,512,measured,7,1,34283700.0,1878.8115925685456,-1,-1,-1
+SAMPLE,unroll4,512,measured,8,1,33738100.0,1878.8115925685456,-1,-1,-1
+SAMPLE,unroll4,512,measured,9,1,35579200.0,1878.8115925685456,-1,-1,-1
+MEM,unroll4,512,peak_working_set_kib,14500
+MEM,unroll4,512,peak_commit_kib,7848

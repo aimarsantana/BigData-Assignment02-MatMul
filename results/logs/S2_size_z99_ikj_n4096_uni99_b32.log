@@ -1,0 +1,12 @@
+C:\Users\aimar\OneDrive\Escritorio\Tercero de carrera\ASIGNATURAS\Big Data\assigments\assigment-2\Assignment02_AlejandroSantana_Materials\build\matmul2.exe dense ikj C:/bench2/data\A_n4096_uni_z99.bin C:/bench2/data\B_n4096_uni_z99.bin 4096 1 3 0 32
+INFO,all,compiler,gcc 16.1.0
+INFO,all,cflags,-O2 -std=c11 -Wall -Wextra -lpsapi
+INFO,all,affinity,logical processor 2
+INFO,all,priority,high
+INFO,ikj,block,0
+SAMPLE,ikj,4096,warmup,0,1,39553128400.0,252.59325763400491,-1,-1,-1
+SAMPLE,ikj,4096,measured,0,1,39422039300.0,252.59325763400491,-1,-1,-1
+SAMPLE,ikj,4096,measured,1,1,39221037400.0,252.59325763400491,-1,-1,-1
+SAMPLE,ikj,4096,measured,2,1,39474156100.0,252.59325763400491,-1,-1,-1
+MEM,ikj,4096,peak_working_set_kib,401604
+MEM,ikj,4096,peak_commit_kib,395756

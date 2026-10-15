@@ -1,0 +1,14 @@
+C:\Users\aimar\OneDrive\Escritorio\Tercero de carrera\ASIGNATURAS\Big Data\assigments\assigment-2\Assignment02_AlejandroSantana_Materials\build\matmul2.exe dense unroll4 C:/bench2/data\A_n768.bin C:/bench2/data\B_n768.bin 768 1 5 0 32
+INFO,all,compiler,gcc 16.1.0
+INFO,all,cflags,-O2 -std=c11 -Wall -Wextra -lpsapi
+INFO,all,affinity,logical processor 2
+INFO,all,priority,high
+INFO,unroll4,block,0
+SAMPLE,unroll4,768,warmup,0,1,112647900.0,-7865.7020353368971,-1,-1,-1
+SAMPLE,unroll4,768,measured,0,1,109513100.0,-7865.7020353368971,-1,-1,-1
+SAMPLE,unroll4,768,measured,1,1,109845300.0,-7865.7020353368971,-1,-1,-1
+SAMPLE,unroll4,768,measured,2,1,120005600.0,-7865.7020353368971,-1,-1,-1
+SAMPLE,unroll4,768,measured,3,1,115512400.0,-7865.7020353368971,-1,-1,-1
+SAMPLE,unroll4,768,measured,4,1,110212800.0,-7865.7020353368971,-1,-1,-1
+MEM,unroll4,768,peak_working_set_kib,22196
+MEM,unroll4,768,peak_commit_kib,15532

@@ -1,0 +1,18 @@
+C:\Users\aimar\OneDrive\Escritorio\Tercero de carrera\ASIGNATURAS\Big Data\assigments\assigment-2\Assignment02_AlejandroSantana_Materials\build\matmul2.exe convert C:/bench2/data\A_n1024_uni_z0.bin C:/bench2/data\B_n1024_uni_z0.bin 1024 1 10
+INFO,all,compiler,gcc 16.1.0
+INFO,all,cflags,-O2 -std=c11 -Wall -Wextra -lpsapi
+INFO,all,affinity,logical processor 2
+INFO,all,priority,high
+SAMPLE,convert,1024,warmup,0,1,7070800.0,-372.2597406671569,1048576,1048576,-1
+SAMPLE,convert,1024,measured,0,1,7010700.0,-372.2597406671569,1048576,1048576,-1
+SAMPLE,convert,1024,measured,1,1,7015600.0,-372.2597406671569,1048576,1048576,-1
+SAMPLE,convert,1024,measured,2,1,7767400.0,-372.2597406671569,1048576,1048576,-1
+SAMPLE,convert,1024,measured,3,1,6982300.0,-372.2597406671569,1048576,1048576,-1
+SAMPLE,convert,1024,measured,4,1,7038400.0,-372.2597406671569,1048576,1048576,-1
+SAMPLE,convert,1024,measured,5,1,8362700.0,-372.2597406671569,1048576,1048576,-1
+SAMPLE,convert,1024,measured,6,1,6956200.0,-372.2597406671569,1048576,1048576,-1
+SAMPLE,convert,1024,measured,7,1,6956900.0,-372.2597406671569,1048576,1048576,-1
+SAMPLE,convert,1024,measured,8,1,7084700.0,-372.2597406671569,1048576,1048576,-1
+SAMPLE,convert,1024,measured,9,1,6957800.0,-372.2597406671569,1048576,1048576,-1
+MEM,convert,1024,peak_working_set_kib,49348
+MEM,convert,1024,peak_commit_kib,42796

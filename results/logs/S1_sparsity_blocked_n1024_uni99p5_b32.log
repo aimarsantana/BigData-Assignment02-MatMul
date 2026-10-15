@@ -1,0 +1,14 @@
+C:\Users\aimar\OneDrive\Escritorio\Tercero de carrera\ASIGNATURAS\Big Data\assigments\assigment-2\Assignment02_AlejandroSantana_Materials\build\matmul2.exe dense blocked C:/bench2/data\A_n1024_uni_z99.5.bin C:/bench2/data\B_n1024_uni_z99.5.bin 1024 1 5 0 32
+INFO,all,compiler,gcc 16.1.0
+INFO,all,cflags,-O2 -std=c11 -Wall -Wextra -lpsapi
+INFO,all,affinity,logical processor 2
+INFO,all,priority,high
+INFO,blocked,block,32
+SAMPLE,blocked,1024,warmup,0,1,460475800.0,49.621677637361451,-1,-1,-1
+SAMPLE,blocked,1024,measured,0,1,453247100.0,49.621677637361451,-1,-1,-1
+SAMPLE,blocked,1024,measured,1,1,522417400.0,49.621677637361451,-1,-1,-1
+SAMPLE,blocked,1024,measured,2,1,449860600.0,49.621677637361451,-1,-1,-1
+SAMPLE,blocked,1024,measured,3,1,470911700.0,49.621677637361451,-1,-1,-1
+SAMPLE,blocked,1024,measured,4,1,494908200.0,49.621677637361451,-1,-1,-1
+MEM,blocked,1024,peak_working_set_kib,32956
+MEM,blocked,1024,peak_commit_kib,26328

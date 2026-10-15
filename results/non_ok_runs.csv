@@ -1,0 +1,21 @@
+experiment,method,n,pattern,param,status,note
+D1_size,ijk,3072,dense,,TIMEOUT,
+D1_size,ijk,4096,dense,,NOT_ATTEMPTED,series stopped by an earlier failure/over-budget run
+S2_size_z99,ijk,4096,uni,99,TIMEOUT,
+S2_size_z99,ijk,8192,uni,99,NOT_ATTEMPTED,series stopped by an earlier failure/over-budget run
+S2_size_z99,ikj,8192,uni,99,NOT_ATTEMPTED,dense input not generated for n > 4096 (8n^2 bytes per matrix)
+S2_size_z99,unroll4,8192,uni,99,NOT_ATTEMPTED,dense input not generated for n > 4096 (8n^2 bytes per matrix)
+S2_size_z99,blocked,8192,uni,99,NOT_ATTEMPTED,dense input not generated for n > 4096 (8n^2 bytes per matrix)
+S2_size_z99,convert,8192,uni,99,NOT_ATTEMPTED,dense input not generated for n > 4096
+S3_size_z99.9,blocked,8192,uni,99.9,NOT_ATTEMPTED,dense input not generated for n > 4096 (8n^2 bytes per matrix)
+S3_size_z99.9,convert,8192,uni,99.9,NOT_ATTEMPTED,dense input not generated for n > 4096
+S3_size_z99.9,blocked,16384,uni,99.9,NOT_ATTEMPTED,dense input not generated for n > 4096 (8n^2 bytes per matrix)
+S3_size_z99.9,convert,16384,uni,99.9,NOT_ATTEMPTED,dense input not generated for n > 4096
+S3_size_z99.9,blocked,32768,uni,99.9,NOT_ATTEMPTED,dense input not generated for n > 4096 (8n^2 bytes per matrix)
+S3_size_z99.9,convert,32768,uni,99.9,NOT_ATTEMPTED,dense input not generated for n > 4096
+S5_band_size,blocked,8192,band,5,NOT_ATTEMPTED,dense input not generated for n > 4096 (8n^2 bytes per matrix)
+S5_band_size,convert,8192,band,5,NOT_ATTEMPTED,dense input not generated for n > 4096
+S5_band_size,blocked,16384,band,5,NOT_ATTEMPTED,dense input not generated for n > 4096 (8n^2 bytes per matrix)
+S5_band_size,convert,16384,band,5,NOT_ATTEMPTED,dense input not generated for n > 4096
+S5_band_size,blocked,32768,band,5,NOT_ATTEMPTED,dense input not generated for n > 4096 (8n^2 bytes per matrix)
+S5_band_size,convert,32768,band,5,NOT_ATTEMPTED,dense input not generated for n > 4096

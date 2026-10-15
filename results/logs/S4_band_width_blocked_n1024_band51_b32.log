@@ -1,0 +1,14 @@
+C:\Users\aimar\OneDrive\Escritorio\Tercero de carrera\ASIGNATURAS\Big Data\assigments\assigment-2\Assignment02_AlejandroSantana_Materials\build\matmul2.exe dense blocked C:/bench2/data\A_n1024_band_w51.bin C:/bench2/data\B_n1024_band_w51.bin 1024 1 5 0 32
+INFO,all,compiler,gcc 16.1.0
+INFO,all,cflags,-O2 -std=c11 -Wall -Wextra -lpsapi
+INFO,all,affinity,logical processor 2
+INFO,all,priority,high
+INFO,blocked,block,32
+SAMPLE,blocked,1024,warmup,0,1,451062400.0,1194.3727488450195,-1,-1,-1
+SAMPLE,blocked,1024,measured,0,1,444043600.0,1194.3727488450195,-1,-1,-1
+SAMPLE,blocked,1024,measured,1,1,429571800.0,1194.3727488450195,-1,-1,-1
+SAMPLE,blocked,1024,measured,2,1,440963900.0,1194.3727488450195,-1,-1,-1
+SAMPLE,blocked,1024,measured,3,1,435584600.0,1194.3727488450195,-1,-1,-1
+SAMPLE,blocked,1024,measured,4,1,429579500.0,1194.3727488450195,-1,-1,-1
+MEM,blocked,1024,peak_working_set_kib,32944
+MEM,blocked,1024,peak_commit_kib,26348
