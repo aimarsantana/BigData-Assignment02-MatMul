@@ -1,0 +1,451 @@
+{
+  "description": "Assignment 2 benchmark configuration (read by generate_inputs.py and run_benchmarks.py).",
+  "numeric_type": "float64 (IEEE-754 binary64)",
+  "threads": 1,
+  "block_size": 32,
+  "budget": {
+    "max_seconds_per_sample": 120,
+    "memory_budget_peak_working_set_bytes": 4000000000,
+    "stop_rule": "if a series (experiment, method, pattern, parameter) exceeds the time or memory budget at size n, larger sizes of that series are NOT_ATTEMPTED"
+  },
+  "repetitions": {
+    "n<=512": 10,
+    "n<=2048": 5,
+    "n>2048": 3
+  },
+  "warmup_runs": {
+    "n<=512": 2,
+    "n>512": 1
+  },
+  "batch": 0,
+  "inputs": {
+    "dense_sizes": [
+      64,
+      128,
+      256,
+      384,
+      512,
+      768,
+      1024,
+      1536,
+      2048,
+      3072,
+      4096
+    ],
+    "dense_file_max_n": 4096,
+    "sparse": [
+      {
+        "n": 1024,
+        "pattern": "uni",
+        "param": 0
+      },
+      {
+        "n": 1024,
+        "pattern": "uni",
+        "param": 50
+      },
+      {
+        "n": 1024,
+        "pattern": "uni",
+        "param": 80
+      },
+      {
+        "n": 1024,
+        "pattern": "uni",
+        "param": 90
+      },
+      {
+        "n": 1024,
+        "pattern": "uni",
+        "param": 95
+      },
+      {
+        "n": 1024,
+        "pattern": "uni",
+        "param": 98
+      },
+      {
+        "n": 1024,
+        "pattern": "uni",
+        "param": 99
+      },
+      {
+        "n": 1024,
+        "pattern": "uni",
+        "param": 99.5
+      },
+      {
+        "n": 1024,
+        "pattern": "uni",
+        "param": 99.9
+      },
+      {
+        "n": 256,
+        "pattern": "uni",
+        "param": 99
+      },
+      {
+        "n": 512,
+        "pattern": "uni",
+        "param": 99
+      },
+      {
+        "n": 2048,
+        "pattern": "uni",
+        "param": 99
+      },
+      {
+        "n": 4096,
+        "pattern": "uni",
+        "param": 99
+      },
+      {
+        "n": 8192,
+        "pattern": "uni",
+        "param": 99
+      },
+      {
+        "n": 2048,
+        "pattern": "uni",
+        "param": 99.9
+      },
+      {
+        "n": 4096,
+        "pattern": "uni",
+        "param": 99.9
+      },
+      {
+        "n": 8192,
+        "pattern": "uni",
+        "param": 99.9
+      },
+      {
+        "n": 16384,
+        "pattern": "uni",
+        "param": 99.9
+      },
+      {
+        "n": 32768,
+        "pattern": "uni",
+        "param": 99.9
+      },
+      {
+        "n": 1024,
+        "pattern": "band",
+        "param": 0
+      },
+      {
+        "n": 1024,
+        "pattern": "band",
+        "param": 2
+      },
+      {
+        "n": 1024,
+        "pattern": "band",
+        "param": 5
+      },
+      {
+        "n": 1024,
+        "pattern": "band",
+        "param": 13
+      },
+      {
+        "n": 1024,
+        "pattern": "band",
+        "param": 51
+      },
+      {
+        "n": 2048,
+        "pattern": "band",
+        "param": 5
+      },
+      {
+        "n": 4096,
+        "pattern": "band",
+        "param": 5
+      },
+      {
+        "n": 8192,
+        "pattern": "band",
+        "param": 5
+      },
+      {
+        "n": 16384,
+        "pattern": "band",
+        "param": 5
+      },
+      {
+        "n": 32768,
+        "pattern": "band",
+        "param": 5
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "id": "D1_size",
+      "type": "dense",
+      "sizes": [
+        64,
+        128,
+        256,
+        384,
+        512,
+        768,
+        1024,
+        1536,
+        2048,
+        3072,
+        4096
+      ],
+      "methods": [
+        "ijk",
+        "ikj",
+        "unroll4",
+        "blocked"
+      ]
+    },
+    {
+      "id": "D2_block",
+      "type": "block_sweep",
+      "sizes": [
+        1024,
+        2048,
+        4096
+      ],
+      "blocks": [
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512
+      ]
+    },
+    {
+      "id": "S1_sparsity",
+      "type": "sparse",
+      "cases": [
+        {
+          "n": 1024,
+          "pattern": "uni",
+          "param": 0
+        },
+        {
+          "n": 1024,
+          "pattern": "uni",
+          "param": 50
+        },
+        {
+          "n": 1024,
+          "pattern": "uni",
+          "param": 80
+        },
+        {
+          "n": 1024,
+          "pattern": "uni",
+          "param": 90
+        },
+        {
+          "n": 1024,
+          "pattern": "uni",
+          "param": 95
+        },
+        {
+          "n": 1024,
+          "pattern": "uni",
+          "param": 98
+        },
+        {
+          "n": 1024,
+          "pattern": "uni",
+          "param": 99
+        },
+        {
+          "n": 1024,
+          "pattern": "uni",
+          "param": 99.5
+        },
+        {
+          "n": 1024,
+          "pattern": "uni",
+          "param": 99.9
+        }
+      ],
+      "dense_methods": [
+        "ijk",
+        "ikj",
+        "unroll4",
+        "blocked"
+      ],
+      "csr": true,
+      "convert": true
+    },
+    {
+      "id": "S2_size_z99",
+      "type": "sparse",
+      "cases": [
+        {
+          "n": 256,
+          "pattern": "uni",
+          "param": 99
+        },
+        {
+          "n": 512,
+          "pattern": "uni",
+          "param": 99
+        },
+        {
+          "n": 1024,
+          "pattern": "uni",
+          "param": 99
+        },
+        {
+          "n": 2048,
+          "pattern": "uni",
+          "param": 99
+        },
+        {
+          "n": 4096,
+          "pattern": "uni",
+          "param": 99
+        },
+        {
+          "n": 8192,
+          "pattern": "uni",
+          "param": 99
+        }
+      ],
+      "dense_methods": [
+        "ijk",
+        "ikj",
+        "unroll4",
+        "blocked"
+      ],
+      "csr": true,
+      "convert": true
+    },
+    {
+      "id": "S3_size_z99.9",
+      "type": "sparse",
+      "cases": [
+        {
+          "n": 1024,
+          "pattern": "uni",
+          "param": 99.9
+        },
+        {
+          "n": 2048,
+          "pattern": "uni",
+          "param": 99.9
+        },
+        {
+          "n": 4096,
+          "pattern": "uni",
+          "param": 99.9
+        },
+        {
+          "n": 8192,
+          "pattern": "uni",
+          "param": 99.9
+        },
+        {
+          "n": 16384,
+          "pattern": "uni",
+          "param": 99.9
+        },
+        {
+          "n": 32768,
+          "pattern": "uni",
+          "param": 99.9
+        }
+      ],
+      "dense_methods": [
+        "blocked"
+      ],
+      "csr": true,
+      "convert": true
+    },
+    {
+      "id": "S4_band_width",
+      "type": "sparse",
+      "cases": [
+        {
+          "n": 1024,
+          "pattern": "band",
+          "param": 0
+        },
+        {
+          "n": 1024,
+          "pattern": "band",
+          "param": 2
+        },
+        {
+          "n": 1024,
+          "pattern": "band",
+          "param": 5
+        },
+        {
+          "n": 1024,
+          "pattern": "band",
+          "param": 13
+        },
+        {
+          "n": 1024,
+          "pattern": "band",
+          "param": 51
+        }
+      ],
+      "dense_methods": [
+        "ijk",
+        "ikj",
+        "unroll4",
+        "blocked"
+      ],
+      "csr": true,
+      "convert": true
+    },
+    {
+      "id": "S5_band_size",
+      "type": "sparse",
+      "cases": [
+        {
+          "n": 1024,
+          "pattern": "band",
+          "param": 5
+        },
+        {
+          "n": 2048,
+          "pattern": "band",
+          "param": 5
+        },
+        {
+          "n": 4096,
+          "pattern": "band",
+          "param": 5
+        },
+        {
+          "n": 8192,
+          "pattern": "band",
+          "param": 5
+        },
+        {
+          "n": 16384,
+          "pattern": "band",
+          "param": 5
+        },
+        {
+          "n": 32768,
+          "pattern": "band",
+          "param": 5
+        }
+      ],
+      "dense_methods": [
+        "blocked"
+      ],
+      "csr": true,
+      "convert": true
+    }
+  ]
+}
